@@ -1,0 +1,78 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    margin: 0px;
+    background-color: black;
+    color: white;
+    font-family:'Cinzel', 'Playfair Display', 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.first-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    min-height: 100vh;
+    background-color: black;
+}
+
+.second-page {
+    min-height: 100vh;
+    background-color: black;
+    display: absolute;
+}
+
+h2 {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.txt {
+    font-size: 18px;
+    color: white;
+    width: 400px;
+    font-size: 20px;
+    font-family:'Cinzel', 'Playfair Display', 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+}
+.ecole {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 128px;
+    padding-bottom: 256px;
+}
+.block{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+img{
+    width: 512px;
+    height: 362px;
+    border-radius: 8px;
+}
+
+span{
+    color: #eb1414;
+}
+
+.plus{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 128px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
