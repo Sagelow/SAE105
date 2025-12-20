@@ -7,4 +7,4 @@ for (let i=0; i<cles.length; i++){
     console.log(cles[affichage])
 }
 
-document.querySelector("div").innerHTML=affichage
+document.querySelector(".result").innerHTML=affichage

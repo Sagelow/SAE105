@@ -5,9 +5,15 @@ html{
 
 body{
     margin: 0px;
-    background-color: black;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family:'Cinzel', 'Playfair Display', 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../img/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 img{
@@ -20,40 +26,80 @@ span{
     color: #eb1414;
 }
 
-div{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    gap: 64px;
-}
-
 a{
     font-size: 32px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding-bottom: 32px;
     font-weight: bold;
-    border: 2px solid white;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 8px;
     padding: 32px;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 64px;
-    padding-bottom: 64px;
-}
 
+.result{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 64px;
+}
 
 .liste{
     margin: 16px;
-    justify-content: center;
     display: flex;
     align-items: center;
     gap: 128px;
-    flex-wrap: wrap;
-    width: 1024px;
+}
+
+.window-container{
+    background-color: rgb(232, 232, 232);
+    border-radius: 32px;
+    min-height: 85vh;
+    width: 80%;
+    border: 10px solid rgb(0, 0, 0);
+}
+
+.top-bar{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 6vh;
+    background-color: #000;
+    justify-content: space-between;
+}
+
+.top-bar-name{
+    font-weight: bold;
+    font-size: 24px;
+    color: aliceblue;
+    padding-left: 24px;
+}
+
+.top-bar-actions{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-right: 24px;
+}
+
+.reduce{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #00ff2a;
+}
+
+.fullscreen{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #f1ff29;
+}
+
+.close{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #ff0000;
 }
