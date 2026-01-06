@@ -11,9 +11,11 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('../img/wallpaper.jpg');
-    background-size: cover;
+    background-image: url('../img/FirstPage.webp');
+    background-size: 35%;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
 }
 
 img{
