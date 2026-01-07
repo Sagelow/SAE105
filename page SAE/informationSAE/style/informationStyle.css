@@ -1,0 +1,39 @@
+/* Styles minimaux pour garantir la lisibilité */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background: #f9f9fb
+}
+
+.return {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #1a73e8;
+    text-decoration: none
+}
+
+.sae-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 18px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04)
+}
+
+.sae-card h1 {
+    margin: 0 0 8px;
+    font-size: 1.4rem
+}
+
+.meta {
+    color: #555;
+    margin-bottom: 10px
+}
+
+.section {
+    margin-top: 12px
+}
+
+.section ul {
+    margin: 6px 0 0 18px
+}

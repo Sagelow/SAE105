@@ -1,3 +1,4 @@
+
 html{
     scroll-behavior: smooth;
 
@@ -11,18 +12,11 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('../img/FirstPage.webp');
-    background-size: 35%;
+    background-image: url('../img/wallpaper.jpg');
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-color: #ffffff;
 }
 
-img{
-    width: 512px;
-    height: 362px;
-    border-radius: 8px;
-}
 
 span{
     color: #eb1414;
