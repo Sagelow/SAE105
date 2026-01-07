@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <title>Accueil</title>
 </head>
 
@@ -12,12 +13,15 @@
     <!-- First part: Welcome message -->
     <main class="first-part">
         <section class="home-section">
-            <h1>Welcome</h1>
+            <a href="#" id="goSecond">
+                <h1>Welcome</h1>
+            </a>
         </section>
     </main>
     <hr>
+ <p></p>
     <!-- Second part: My journey -->
-    <main class="second-part">
+    <main id="second-part">
         <section class="about-section">
             <h2 class="about-me">Mon parcours</h2>
             <div class="ecole">
@@ -63,11 +67,17 @@
 
         <!-- Minecraft Button to discover SAE page -->
         <div class="center">
-            <a href="page SAE/sae.html" class="btn" target="_blank">
+            <a href="page SAE/sae.html" class="btn">
                 <span class="plus">En savoir plus</span>
             </a>
         </div>
     </main>
+
+    <script>
+        document.getElementById('goSecond').onclick = function () {
+            document.getElementById('second-part').scrollIntoView();
+        };
+    </script>
 </body>
 
 </html>

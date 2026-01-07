@@ -6,9 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/SAEstyle.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
 </head>
 
 <body>
+    <!-- Mac-like top bar -->
+    <div class="mac-bar">
+
+        <nav class="mac-menu">
+            <a href="../index.html" class="logo">
+                <img src="img/apple.png" alt="apple logo" class="apple-logo">
+            </a>
+            <a class="mac-menu-item" href="#">Fichier</a>
+            <a class="mac-menu-item" href="#">Édition</a>
+            <a class="mac-menu-item" href="#">Présentation</a>
+            <a class="mac-menu-item" href="#">Fenêtre</a>
+            <a class="mac-menu-item" href="#">Aide</a>
+        </nav>
+
+        <div class="mac-right">
+            <div class="status-icons">🔍&nbsp;&nbsp;&nbsp;&nbsp;🔔</div>
+            <div class="clock" id="macClock"></div>
+        </div>
+    </div>
+
     <!-- Fake window -->
 
     <div class="window-container">
@@ -31,6 +52,32 @@
     </div>
     </div>
 
+    <!-- Mac-like dock -->
+
+    <div class="mac-dock">
+        <a href="#" class="dock-item" title="Finder">
+            <img src="img/dock/finder.png" alt="Finder">
+        </a>
+        <a href="#" class="dock-item" title="Safari">
+            <img src="img/dock/safari.png" alt="Safari">
+        </a>
+        <a href="#" class="dock-item" title="Mail">
+            <img src="img/dock/mail.webp" alt="Mail">
+        </a>
+        <a href="#" class="dock-item" title="Notes">
+            <img src="img/dock/notes.webp" alt="Notes">
+        </a>
+        <a href="#" class="dock-item" title="Music">
+            <img src="img/dock/apple-music.png" alt="Apple Music">
+        </a>
+        <div class="dock-separator"></div>
+        <a href="#" class="dock-item" title="Downloads">
+            <img src="img/dock/download.webp" alt="Downloads">
+        </a>
+        <a href="#" class="dock-item" title="Trash">
+            <img src="img/dock/trash.png" alt="Trash">
+        </a>
+    </div>
 
 
     <script src="js/dataSAE.js"></script>

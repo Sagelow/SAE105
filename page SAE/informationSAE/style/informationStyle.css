@@ -1,39 +1,86 @@
-/* Styles minimaux pour garantir la lisibilité */
+/***********************/
+/****  Page Layout  ****/
+/***********************/
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
-    background: #f9f9fb
+    padding: 28px;
+    width: 90%;
+    margin: 0 auto;
+    background: black;
+}
+
+/***************************/
+/****  Important Stuff  ****/
+/***************************/
+
+span {
+    font-weight: bold;
+    color: #be0000;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
 }
 
 .return {
+    margin-top: 22px;
     display: inline-block;
     margin-bottom: 12px;
-    color: #1a73e8;
-    text-decoration: none
+    color: #b30000;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.sae-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 18px;
+.return:hover {
+    text-decoration: underline;
+}
+
+.sae {
+    background: linear-gradient(180deg, #111111 0%, #141414 100%);
+    border: 1px solid rgba(179, 0, 0, 0.12);
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(11, 11, 11, 0.5);
+    color: #ffffff;
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 26px;
+    color: #b30000;
+    letter-spacing: 0.4px;
+}
+
+.pdf {
+    margin-top: 16px;
+    padding: 10px 14px;
+    background-color: #b30000;
+    color: white;
+    text-align: center;
     border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04)
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 6px 16px rgba(179, 0, 0, 0.18);
 }
 
-.sae-card h1 {
-    margin: 0 0 8px;
-    font-size: 1.4rem
+.pdf:hover {
+    text-decoration: underline;
 }
 
-.meta {
-    color: #555;
-    margin-bottom: 10px
+/************************/
+/****  Text Spacing  ****/
+/************************/
+
+li {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.4;
 }
 
-.section {
-    margin-top: 12px
-}
-
-.section ul {
-    margin: 6px 0 0 18px
+p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.4;
 }

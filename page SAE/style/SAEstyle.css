@@ -1,13 +1,11 @@
+/************************/
+/****  Presentation  ****/
+/************************/
 
-html{
-    scroll-behavior: smooth;
-
-}
-
-body{
+body {
     margin: 0px;
     color: rgb(0, 0, 0);
-    font-family:'Cinzel', 'Playfair Display', 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,46 +15,19 @@ body{
     background-position: center;
 }
 
+/******************/
+/****  Window  ****/
+/******************/
 
-span{
-    color: #eb1414;
-}
-
-a{
-    font-size: 32px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding-bottom: 32px;
-    font-weight: bold;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 8px;
-    padding: 32px;
-}
-
-
-.result{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 64px;
-}
-
-.liste{
-    margin: 16px;
-    display: flex;
-    align-items: center;
-    gap: 128px;
-}
-
-.window-container{
-    background-color: rgb(232, 232, 232);
-    border-radius: 32px;
-    min-height: 85vh;
-    width: 80%;
+.window-container {
+    background-color: rgb(230, 230, 230);
+    border-radius: 24px;
+    min-height: 75vh;
+    width: 75%;
     border: 10px solid rgb(0, 0, 0);
 }
 
-.top-bar{
+.top-bar {
     align-items: center;
     display: flex;
     width: 100%;
@@ -65,37 +36,211 @@ a{
     justify-content: space-between;
 }
 
-.top-bar-name{
+.top-bar-name {
     font-weight: bold;
     font-size: 24px;
     color: aliceblue;
     padding-left: 24px;
 }
 
-.top-bar-actions{
+.top-bar-actions {
     display: flex;
     align-items: center;
     gap: 24px;
     padding-right: 24px;
 }
 
-.reduce{
+.reduce {
     width: 15px;
     height: 15px;
     border-radius: 10px;
     background-color: #00ff2a;
+    cursor: pointer;
 }
 
-.fullscreen{
+.fullscreen {
     width: 15px;
     height: 15px;
     border-radius: 10px;
     background-color: #f1ff29;
+    cursor: pointer;
 }
 
-.close{
+.close {
     width: 15px;
     height: 15px;
     border-radius: 10px;
     background-color: #ff0000;
+    cursor: pointer;
+}
+
+/***********************/
+/****  List of SAE  ****/
+/***********************/
+
+a {
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+
+}
+
+.result a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    font-size: 16px;
+    font-weight: normal;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.result a:hover {
+    background: rgb(255, 255, 255, 0.5);
+}
+
+.result a::before {
+    content: "";
+    display: block;
+    width: 128px;
+    height: 128px;
+    background-image: url('../img/folder.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+}
+
+.liste {
+    margin-top: 12px;
+    margin-left: 24px;
+}
+
+/***********************/
+/****  Mac top bar  ****/
+/***********************/
+
+.mac-bar {
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.logo{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.apple-logo {
+    cursor: pointer;
+    padding-top: 4px;
+    padding-left: 6px;
+    width: 16px;
+    height: 16px;
+}
+
+.mac-right {
+    display: flex;
+    align-items: left;
+    gap: 4px;
+}
+
+.mac-menu {
+    align-items: center;
+    display: flex;
+    gap: 14px;
+}
+
+.mac-menu-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: 0.95;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+.mac-menu-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.status-icons {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    opacity: 0.95;
+    margin-right: 8px;
+}
+
+.clock {
+    font-size: 13px;
+    min-width: 48px;
+    text-align: right;
+}
+
+/**************************/
+/****  Mac bottom bar  ****/
+/**************************/
+
+.mac-dock {
+    position: fixed;
+    bottom: 1.5vh;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 1vh 1vw;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.dock-item {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.dock-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.dock-item:hover {
+    transform: scale(1.15);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dock-separator {
+    width: 1px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 4px;
 }
